@@ -1,6 +1,6 @@
 <!-- fav/title -->
 <p align="center">
-<img src="https://raw.githubusercontent.com/pygitdev/github-profile-readme-generator/main/src/favicon.png?token=GHSAT0AAAAAABVPFVGXLOOUVMTBWTI5K6DCYVMWZLA" height="200" align="center">
+<img src="src/favicon.png" height="200" align="center">
 </p>
 <h1 align="center">GitHub Profile Readme Generator</h1>
 
@@ -30,10 +30,8 @@ In less than 10 mins you can create an awesome GitHub PROFILE README by just fil
 
 ## 🏗️ Build with
  <!-- top badges -->
-<p align="center">
-<img src="https://img.shields.io/badge/Made%20with%20Python-000?style=for-the-badge&logo=python&logoColor=white" width="200" align="left"> 
-
-<img src="https://img.shields.io/badge/Made%20with%20Streamlit-FF1B2D?style=for-the-badge&logo=streamlit&logoColor=white" width="220" align="center"> 
-
-<img src="https://img.shields.io/badge/Made%20with%20love-000?style=for-the-badge&logo=GitHub-Sponsors&logoColor=red" width="200" align="right"> 
+<p align="left">
+<img src="https://img.shields.io/badge/Made%20with%20Python-000?style=for-the-badge&logo=python&logoColor=white" width="200" align="centre"> 
+<img src="https://img.shields.io/badge/Made%20with%20Streamlit-FF1B2D?style=for-the-badge&logo=streamlit&logoColor=white" width="200" align="center"> 
+<img src="https://img.shields.io/badge/Made%20with%20love-000?style=for-the-badge&logo=GitHub-Sponsors&logoColor=red" width="200" align="centre"> 
 </p>
