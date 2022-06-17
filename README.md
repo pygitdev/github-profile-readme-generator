@@ -31,7 +31,7 @@ In less than 10 mins you can create an awesome GitHub PROFILE README by just fil
 ## 🏗️ Build with
  <!-- top badges -->
 <p align="left">
-<img src="https://img.shields.io/badge/Made%20with%20Python-000?style=for-the-badge&logo=python&logoColor=white" width="200" align="centre"> 
+<img src="https://img.shields.io/badge/Made%20with%20Python-000?style=for-the-badge&logo=python&logoColor=white" width="200" align="left"> 
 <img src="https://img.shields.io/badge/Made%20with%20Streamlit-FF1B2D?style=for-the-badge&logo=streamlit&logoColor=white" width="200" align="center"> 
 <img src="https://img.shields.io/badge/Made%20with%20love-000?style=for-the-badge&logo=GitHub-Sponsors&logoColor=red" width="200" align="centre"> 
 </p>
