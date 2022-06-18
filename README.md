@@ -9,7 +9,7 @@
 <p>This web app provides you an easy way to create a awesome GitHub Profile Readme with multi-options</p>
 
 ## Demo
-[![](https://img.shields.io/badge/Go_to_live_website-100000?style=for-the-badge&logo=amp&logoColor=white&labelColor=black&color=black)](share.streamlit.io/pygitdev/github-profile-readme-generator/main/app.py)
+[![](https://img.shields.io/badge/Go_to_live_website-100000?style=for-the-badge&logo=amp&logoColor=white&labelColor=black&color=black)](https://share.streamlit.io/pygitdev/github-profile-readme-generator/main/app.py)
 
 <!-- features -->
 ## 💡 Features <br>
