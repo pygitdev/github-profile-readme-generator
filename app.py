@@ -10,12 +10,12 @@ with open("src/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 with col2:
-    x = CreatePage()
-    x.create_page()
+    App = CreatePage()
+    App.create_page()
 
 with col1:
-    markdown = preview(x)
+    raw_markdown = preview(App)
 
 with col2:
-    download_readme(markdown)
+    download_readme(raw_markdown)
 

@@ -9,13 +9,15 @@
 <p>This web app provides you an easy way to create a awesome GitHub Profile Readme with multi-options</p>
 
 ## Demo
-[![](https://img.shields.io/badge/Go_to_live_website-100000?style=for-the-badge&logo=amp&logoColor=white&labelColor=black&color=black)](https://share.streamlit.io/pygitdev/github-profile-readme-generator/main/app.py)
+[![Demo](https://img.shields.io/badge/Go_to_live_website-100000?style=for-the-badge&logo=amp&logoColor=white&labelColor=black&color=black)](https://share.streamlit.io/pygitdev/github-profile-readme-generator/main/app.py)
 
 <!-- features -->
 ## 💡 Features <br>
 In less than 10 mins you can create an awesome GitHub PROFILE README by just file some inputs
-- **4 Theme's for Social Badges**
-- **4 Theme's for Dev Badges**
+- **live preview**
+- **you can change the style of Badges**
+- **Social Badges**
+- **Dev Badges**
 - **7 Different skill categories**
 - **Profile Visitors Count Badge**
 - **GitHub Streak card**
@@ -36,9 +38,9 @@ In less than 10 mins you can create an awesome GitHub PROFILE README by just fil
 
 ## 🏗️ Build with
  <!-- top badges -->
-![](https://img.shields.io/badge/Made%20with%20Python-000?style=for-the-badge&logo=python&logoColor=white)
-![](https://img.shields.io/badge/Made%20with%20Streamlit-FF1B2D?style=for-the-badge&logo=streamlit&logoColor=white)
-![](https://img.shields.io/badge/Made%20with%20love-000?style=for-the-badge&logo=GitHub-Sponsors&logoColor=red)
+![Python](https://img.shields.io/badge/Made%20with%20Python-000?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Made%20with%20Streamlit-FF1B2D?style=for-the-badge&logo=streamlit&logoColor=white)
+![love](https://img.shields.io/badge/Made%20with%20love-000?style=for-the-badge&logo=GitHub-Sponsors&logoColor=red)
 
 ## ✨ Contributing
 ##### Feature Suggestion and Problems 💎

@@ -89,7 +89,6 @@ def support(supports: dict, theme):
 
 def download_readme(code):
     """
-    :param code:
-    :return: it converts the plain markdown string to file and download
+    it converts the plain markdown string to file and download
     """
     st.download_button(label="Download Readme", data=code, mime='text/markdown', file_name="README.md")

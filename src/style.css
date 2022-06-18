@@ -1,7 +1,9 @@
+/* we are not using label so we disable the view */
+/*light theme*/
 label.css-qrbaxs.effi0qh3{
     display: none;
 }
-
+/*Dark theme*/
 label.css-16huue1.effi0qh3{
     display: none;
 }
