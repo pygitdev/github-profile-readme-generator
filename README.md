@@ -14,7 +14,17 @@
 <!-- features -->
 ## 💡 Features <br>
 In less than 10 mins you can create an awesome GitHub PROFILE README by just file some inputs
+- **4 Theme's for Social Badges**
+- **4 Theme's for Dev Badges**
+- **7 Different skill categories**
+- **Profile Visitors Count Badge**
+- **GitHub Streak card**
+- **GitHub Top Skills card**
+- **GitHub Stats card**
+- **GitHub Trophy card**
 
+<!-- features -->
+## 🎈 Upcoming  Features <br>
 - **some templates are going to add**
 - **Image Banner**
 - **Latest blog section**
@@ -22,6 +32,7 @@ In less than 10 mins you can create an awesome GitHub PROFILE README by just fil
 - **Random Meme/Quote**
 - **Adding more badges**
 - **Increasing number of social Icons**
+
 
 ## 🏗️ Build with
  <!-- top badges -->
@@ -56,6 +67,7 @@ Go to Issues on the repo.
    ```shell
    streamlit run app.py
    ```
+
 😃 You are all set!
 
 ## 🙏 Support
