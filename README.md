@@ -19,6 +19,7 @@ In less than 10 mins you can create an awesome GitHub PROFILE README by just fil
 - **Social Badges**
 - **Dev Badges**
 - **7 Different skill categories**
+- **Random Meme/Quote**
 - **Profile Visitors Count Badge**
 - **GitHub Streak card**
 - **GitHub Top Skills card**
@@ -31,7 +32,6 @@ In less than 10 mins you can create an awesome GitHub PROFILE README by just fil
 - **some templates are going to add**
 - **Latest blog section**
 - **Animation Banner**
-- **Random Meme/Quote**
 - **Adding more badges**
 
 
@@ -66,9 +66,9 @@ Go to Issues on the repo.
    pip install -r requirements.txt
    ```
 5.  Run the App
-   ```shell
-   streamlit run app.py
-   ```
+    ```shell
+      streamlit run app.py
+    ```
 
 😃 You are all set!
 
