@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
 /* we are not using label so we disable the view */
 /*light*/
 label.css-qrbaxs.effi0qh3{

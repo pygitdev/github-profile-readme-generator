@@ -99,7 +99,10 @@ def download_readme(code):
     """
     it converts the plain markdown string to file and download
     """
-    st.download_button(label="Download Readme", data=code, mime='text/markdown', file_name="README.md")
+    btn = st.button("Generate README")
+    if btn:
+        st.download_button(label="Download Readme", data=code, mime='text/markdown', file_name="README.md")
+        st.code(code, language="markdown")
 
 
 def svg_banner_generator(type: str, text: str, width: int = 800, height: int = 400):
@@ -110,6 +113,16 @@ def svg_banner_generator(type: str, text: str, width: int = 800, height: int = 4
     return banner
 
 
-def img_banner_generator(url: str):
-    banner = """<p align="center">\n<img src="{}" alt='svg banner' width=100%/> \n</p>\n""".format(url)
+def img_banner_generator(url: str, width: int = 800, height: int = 400):
+    banner = """<p align="center">\n<img src="{}" alt='svg banner' width={} height={}/> \n</p>\n""".format(url, width,
+                                                                                                           height)
     return banner
+
+
+def meme_quote_generator(x: classmethod):
+    markdown = ""
+    if x.quote:
+        markdown += '### Random quote \n\n <img src="https://github-readme-quotes.herokuapp.com/quote?theme=dark"> \n\n'
+    if x.meme:
+        markdown += '### Random Meme \n\n<img src="https://random-memer.herokuapp.com/" width="100%"> \n'
+    return markdown

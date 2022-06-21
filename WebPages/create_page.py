@@ -22,7 +22,10 @@ class CreatePage:
     count_badge = False
     top_skills = False
     streak = False
+    meme = False
+    quote = False
     image_banner = ""
+    svgtitle = ""
 
     def create_page(self):
         # ---- text inputs ---- #
@@ -30,14 +33,20 @@ class CreatePage:
         self.banner_type = st.selectbox("", svg_banner_type)
         if self.banner_type == 'Svg banner':
             st.text("Banner Theme")
-            self.banner_theme = st.selectbox(label="",options=svg_banner_theme)
+            self.banner_theme = st.selectbox(label="",options=svg_banner_theme,index=5)
             st.text("Banner width")
             self.banner_width = st.text_input(label="", value=800)
             st.text("Banner height")
             self.banner_height = st.text_input(label="", value=400)
+            st.text("SVG Title")
+            self.svgtitle = st.text_input(label="", value="svg banner")
         elif self.banner_type == "Image banner":
             st.text("Image url")
-            self.image_banner = st.text_input(label="",value="https://raw.githubusercontent.com/arturssmirnovs/github-profile-readme-generator/master/images/banner.png")
+            self.image_banner = st.text_input(label="",value="https://rishavanand.github.io/static/images/greetings.gif")
+            st.text("Image width")
+            self.banner_width = st.text_input(label="", value="100%")
+            st.text("Image height")
+            self.banner_height = st.text_input(label="", value="30%")
         st.text("Title")
         self.title = st.text_input(label="", value=title_value)
         st.text("Subtitle")
@@ -90,8 +99,12 @@ class CreatePage:
         self.streak = st.checkbox(label="display github streak stats")
         self.count_badge = st.checkbox(label="display visitors count badge")
         self.top_skills = st.checkbox(label="display top skills")
-
+        # ---- random quote/meme ----
+        st.text("Random meme/quote")
+        self.meme = st.checkbox(label="display random meme")
+        self.quote = st.checkbox(label="display random quote")
         # ---- Support selection ---- #
+        st.text("Support badge")
         support_inputs = st.multiselect("", options=support_list)
         for i in support_inputs:
             st.text(f"{i.replace('-', ' ').capitalize()} profile link")
