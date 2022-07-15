@@ -77,5 +77,5 @@ work_area_value = "- 🔭 I’m currently working on [project-name](https://gith
 # ---- themes ---- #
 github_stats_theme = ["default","solarized-light","dark", "radical", "merko", "gruvbox", "tokyonight", "onedark", "cobalt", "synthwave", "highcontrast", "dracula"]
 badge_theme_list = ["For the badge", "Flat", "Flat Square", "Plastic"]
-svg_banner_type = ["None", "Svg banner", "Image banner"]
+svg_banner_type = ["None", "Readme typing", "Svg banner", "Image banner"]
 svg_banner_theme = ["origin",'textBox','glitch','luminance','typeWriter','rainbow']

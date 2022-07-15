@@ -31,6 +31,8 @@ class Templates:
         elif self.banner_type == "Image banner":
             markdown += img_banner_generator(self.image_banner,width=self.banner_width,
                                              height=self.banner_height)
+        elif self.banner_type == "Readme typing":
+            markdown += f'<img src="{self.image_banner}" width="100%">'
 
         markdown += f'<h1 align="center"> {self.title} </h1>\n'
         markdown += f'<h3 align="center">{self.subtitle}</h3>'

@@ -26,27 +26,40 @@ class CreatePage:
     quote = False
     image_banner = ""
     svgtitle = ""
+    typing_input = []
+    typing_text = ""
 
     def create_page(self):
         # ---- text inputs ---- #
         st.text("Banner")
         self.banner_type = st.selectbox("", svg_banner_type)
+        # ------------ SVG Banner ------------ #
         if self.banner_type == 'Svg banner':
             st.text("Banner Theme")
-            self.banner_theme = st.selectbox(label="",options=svg_banner_theme,index=5)
+            self.banner_theme = st.selectbox(label="", options=svg_banner_theme, index=5)
             st.text("Banner width")
             self.banner_width = st.text_input(label="", value=800)
             st.text("Banner height")
             self.banner_height = st.text_input(label="", value=400)
             st.text("SVG Title")
             self.svgtitle = st.text_input(label="", value="svg banner")
+        # ------------ Image Banner ------------ #
         elif self.banner_type == "Image banner":
             st.text("Image url")
-            self.image_banner = st.text_input(label="",value="https://rishavanand.github.io/static/images/greetings.gif")
+            self.image_banner = st.text_input(label="",
+                                              value="https://rishavanand.github.io/static/images/greetings.gif")
             st.text("Image width")
             self.banner_width = st.text_input(label="", value="100%")
             st.text("Image height")
             self.banner_height = st.text_input(label="", value="30%")
+        # ------------ Readme Typing ------------ #
+        elif self.banner_type == "Readme typing":
+            st.text("color")
+            color = st.text_input(label="", value="#236FDA44").replace("#", "%")
+            self.typing_text += st.text_area(label="", value="I'm Pygitdev;\nWeb Developer;\nBlogger")
+            st.text("Banner width")
+            self.image_banner = f"https://readme-typing-svg.herokuapp.com/?color={color}&size=32&center=true&vCenter=true&width=800&height=50&lines={self.typing_text}"
+
         st.text("Title")
         self.title = st.text_input(label="", value=title_value)
         st.text("Subtitle")
