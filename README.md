@@ -26,6 +26,7 @@ In less than 10 mins you can create an awesome GitHub PROFILE README by just fil
 - **GitHub Stats card**
 - **GitHub Trophy card**
 - **live raw code preview**
+- **readme typing banner**
 
 <!-- features -->
 ## 🎈 Upcoming  Features <br>
