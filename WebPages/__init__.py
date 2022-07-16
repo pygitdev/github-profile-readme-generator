@@ -120,6 +120,8 @@ def img_banner_generator(url: str, width: int = 800, height: int = 400):
 
 
 def readme_typo_banner(color: str, text: str, font: str, font_size: str, duration: str):
+    text = text.replace(" ","-")
+    text = text.replace("\n","")
     color = color.replace("#","")
     banner = f"https://readme-typing-svg.herokuapp.com/?size={font_size}&font={font}&duration={duration}&color={color}&size=32&center=true&vCenter=true&width=800&height=50&lines={text}"
     markdown = f'<img src="{banner}" width="100%">'
