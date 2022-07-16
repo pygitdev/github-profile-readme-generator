@@ -26,40 +26,12 @@ class CreatePage:
     quote = False
     image_banner = ""
     svgtitle = ""
-    typing_input = []
-    typing_text = ""
 
     def create_page(self):
-        # ---- text inputs ---- #
-        st.text("Banner")
-        self.banner_type = st.selectbox("", svg_banner_type)
-        # ------------ SVG Banner ------------ #
-        if self.banner_type == 'Svg banner':
-            st.text("Banner Theme")
-            self.banner_theme = st.selectbox(label="", options=svg_banner_theme, index=5)
-            st.text("Banner width")
-            self.banner_width = st.text_input(label="", value=800)
-            st.text("Banner height")
-            self.banner_height = st.text_input(label="", value=400)
-            st.text("SVG Title")
-            self.svgtitle = st.text_input(label="", value="svg banner")
-        # ------------ Image Banner ------------ #
-        elif self.banner_type == "Image banner":
-            st.text("Image url")
-            self.image_banner = st.text_input(label="",
-                                              value="https://rishavanand.github.io/static/images/greetings.gif")
-            st.text("Image width")
-            self.banner_width = st.text_input(label="", value="100%")
-            st.text("Image height")
-            self.banner_height = st.text_input(label="", value="30%")
-        # ------------ Readme Typing ------------ #
-        elif self.banner_type == "Readme typing":
-            st.text("color")
-            color = st.text_input(label="", value="#236FDA44").replace("#", "%")
-            self.typing_text += st.text_area(label="", value="I'm Pygitdev;\nWeb Developer;\nBlogger")
-            st.text("Banner width")
-            self.image_banner = f"https://readme-typing-svg.herokuapp.com/?color={color}&size=32&center=true&vCenter=true&width=800&height=50&lines={self.typing_text}"
+        # ---- Banners inputs ---- #
+        self.banners()
 
+        # ---- Basic Inputs ---- #
         st.text("Title")
         self.title = st.text_input(label="", value=title_value)
         st.text("Subtitle")
@@ -100,18 +72,7 @@ class CreatePage:
         other_input = st.multiselect("", options=other_list)
 
         # ---- Add-ons selection ---- #
-        st.text("Github User Name")
-        self.github_username = st.text_input('')
-        if len(self.github_username) == 0:
-            st.warning("Please enter the github name to use addons")
-        st.text("Github Stats Theme")
-        self.github_theme = st.selectbox('', github_stats_theme)
-        st.text("Add-ons")
-        self.stats_card = st.checkbox(label="display github profile stats card")
-        self.trophy = st.checkbox(label="display github trophy")
-        self.streak = st.checkbox(label="display github streak stats")
-        self.count_badge = st.checkbox(label="display visitors count badge")
-        self.top_skills = st.checkbox(label="display top skills")
+        self.github_addons()
         # ---- random quote/meme ----
         st.text("Random meme/quote")
         self.meme = st.checkbox(label="display random meme")
@@ -125,3 +86,70 @@ class CreatePage:
 
         # ---- all list to one list ----- #
         self.skills = languages_input + frameworks_input + ml_dl_input + databases_input + servers_input + design_input + other_input
+
+    def banners(self):
+        # ---- text inputs ---- #
+        st.text("Banner")
+        self.banner_type = st.selectbox("", svg_banner_type)
+        # ------------ SVG Banner ------------ #
+        if self.banner_type == 'Svg banner':
+            self.svg_banner()
+        # ------------ Image Banner ------------ #
+        elif self.banner_type == "Image banner":
+            self.img_banner()
+        # ------------ Readme Typing ------------ #
+        elif self.banner_type == "Readme typing":
+            self.readme_typo()
+
+    def svg_banner(self):
+        # ------------ SVG Banner ------------ #
+        st.text("Banner Theme")
+        self.banner_theme = st.selectbox(label="", options=svg_banner_theme, index=5)
+        st.text("Banner width")
+        self.banner_width = st.text_input(label="", value=800)
+        st.text("Banner height")
+        self.banner_height = st.text_input(label="", value=400)
+        st.text("SVG Title")
+        self.svgtitle = st.text_input(label="", value="svg banner")
+
+    def img_banner(self):
+        # ------------ Image Banner ------------ #
+        st.text("Image url")
+        self.image_banner = st.text_input(label="",
+                                          value="https://rishavanand.github.io/static/images/greetings.gif")
+        st.text("Image width")
+        self.banner_width = st.text_input(label="", value="100%")
+        st.text("Image height")
+        self.banner_height = st.text_input(label="", value="30%")
+
+    def readme_typo(self):
+        # ------------ Readme Typing ------------ #
+        st.text("color")
+        color = st.color_picker(label="", value="#FF6263")
+        st.text("Use ';' for before going to next line")
+        typing_text = st.text_area(label="", value="I'm Pygitdev;\nWeb Developer;\nBlogger")
+        st.text("Font Size")
+        font_size = st.text_input(label="", value="20")
+        st.text("Font family(select from google fonts)")
+        font_family = st.text_input(label="", value="Edu VIC WA NT Beginner")
+        st.text("Duration (ms per line)")
+        duration = st.text_input(label="", value="5000")
+        self.image_banner = readme_typo_banner(color=color,
+                                               text=typing_text,
+                                               font=font_family,
+                                               font_size=font_size,
+                                               duration=duration)
+
+    def github_addons(self):
+        st.text("Github User Name")
+        self.github_username = st.text_input('')
+        if len(self.github_username) == 0:
+            st.warning("Please enter the github name to use addons")
+        st.text("Github Stats Theme")
+        self.github_theme = st.selectbox('', github_stats_theme)
+        st.text("Add-ons")
+        self.stats_card = st.checkbox(label="display github profile stats card")
+        self.trophy = st.checkbox(label="display github trophy")
+        self.streak = st.checkbox(label="display github streak stats")
+        self.count_badge = st.checkbox(label="display visitors count badge")
+        self.top_skills = st.checkbox(label="display top skills")
