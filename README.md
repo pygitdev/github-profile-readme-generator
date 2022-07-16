@@ -2,6 +2,8 @@
 <p align="center">
 <img src="src/favicon.png" height="200" align="center">
 </p>
+<img src="https://readme-typing-svg.herokuapp.com/?size=20&font=Edu+VIC+WA+NT+Beginner&duration=5000&color=FF6263&size=32&center=true&vCenter=true&width=800&height=50&lines=Github+Profile+Readme+Generator;" width="100%">
+
 <h1 align="center">GitHub Profile Readme Generator</h1>
 
 <!-- preview -->
